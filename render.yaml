@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: kalpavriksha-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SECRET_KEY
+        value: kalpavriksha-secret-32chars-long
+      - key: JWT_SECRET_KEY
+        value: kalpavriksha-jwt-secret-32chars
+      - key: DATABASE_URL
+        value: sqlite:///attendance.db
+      - key: ATTENDANCE_THRESHOLD
+        value: 75
