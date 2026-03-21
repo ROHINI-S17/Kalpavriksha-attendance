@@ -12,7 +12,6 @@
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tooltip": "^1.0.7",
-    "@vladmandic/face-api": "^1.7.15",
     "axios": "^1.6.5",
     "date-fns": "^3.2.0",
     "framer-motion": "^11.0.3",

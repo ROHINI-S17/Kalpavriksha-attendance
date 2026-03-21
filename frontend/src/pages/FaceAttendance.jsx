@@ -3,7 +3,8 @@ import { studentsAPI, attendanceAPI } from '../services/api'
 import { Camera, Upload, CheckCircle2, Loader2, UserCheck, X } from 'lucide-react'
 import toast from 'react-hot-toast'
 import { format } from 'date-fns'
-import * as faceapi from '@vladmandic/face-api'
+// face-api loaded from CDN via index.html
+const faceapi = window.faceapi
 
 const MODEL_URL = 'https://cdn.jsdelivr.net/npm/@vladmandic/face-api/model'
 
