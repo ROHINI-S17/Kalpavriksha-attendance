@@ -24,7 +24,11 @@ def create_app(config_name="default"):
     db.init_app(app)
     jwt.init_app(app)
     migrate.init_app(app, db)
-    CORS(app, origins=["http://localhost:5173", "http://localhost:3000"])
+    CORS(app, origins=[
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://kalpavrikshaattendance.netlify.app"
+])
 
     # Register blueprints
     from app.routes.auth import auth_bp
