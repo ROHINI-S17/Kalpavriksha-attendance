@@ -6,7 +6,7 @@ import { format } from 'date-fns'
 // face-api loaded from CDN via index.html
 const faceapi = window.faceapi
 
-const MODEL_URL = 'https://cdn.jsdelivr.net/npm/@vladmandic/face-api/model'
+const MODEL_URL = '/models'
 
 export default function FaceAttendance() {
   const [mode, setMode] = useState('scan') // 'scan' | 'register'
